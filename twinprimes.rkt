@@ -26,7 +26,7 @@
               (andmap using listofprime)))]
     (rest (filter prime? (map raise (build-list vmax identity))))))
 
-(define (twin lop n)
+(define (twin lop n) ; compares a prime with the following prime to see if the difference is 2
   (cond [(empty? (rest lop)) (string-append "Total " (number->string n) " twin primes")]
         [else
          (if (= (- (second lop) (first lop)) 2)
