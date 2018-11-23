@@ -390,8 +390,8 @@
              (string-append (number->string (first lop)) "," (number->string (second lop)) " " (twin (rest lop) (add1 n)))
              (twin (rest lop) n))]))
 
-(define (twin-prime vmin vmax)
-  (twin (prime vmin vmax) 0))
+(define (twin-prime vmax)
+  (twin (prime 1 vmax) 0))
 
 ;; (twin-prime vmin vmax) to start
 ;; interp. vmin is value min and vmax is value max
