@@ -393,7 +393,7 @@
 (define (twin-prime vmax)
   (twin (prime 1 vmax) 0))
 
-;; (twin-prime vmin vmax) to start
+;; (twin-prime vmax) to start
 ;; interp. vmin is value min and vmax is value max
 ;; Replace variables with a natural for desired range for finding twin primes
 ;; program runs from all natural in [0, 1999^2) and range can be raised by adding
